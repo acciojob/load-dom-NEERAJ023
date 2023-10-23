@@ -1,5 +1,8 @@
 //your JS code here. If required.
-let l=document.getElementById("l");
+
 function load(){
-	l.innerHTML="DOM load success";
+	let para=document.createElement("h1");
+	para.innerHTML="DOM load success";
+	body.append(para);
+	
 }
