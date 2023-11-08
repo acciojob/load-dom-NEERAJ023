@@ -1,8 +1,16 @@
 //your JS code here. If required.
 
 function load(){
-	let para=document.createElement("h1");
-	para.innerHTML="DOM load success";
-	document.body.appendChild(para);
 	
+            // This function will be called when the DOM is fully loaded
+
+            // Display "DOM load success" on the web page
+            var successMessage = document.createElement("p");
+            successMessage.textContent = "DOM load success";
+            document.body.appendChild(successMessage);
+
+            // Clear the body content by removing all child elements
+            while (document.body.firstChild) {
+                document.body.removeChild(document.body.firstChild);
+            }
 }
